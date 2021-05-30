@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài tập</title>
+    <!-- font gg -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- BT1 -->
+    <h1>Bài tập JavaScrip</h1>
+
+    <section>
+        <h2>Bài 1: Tính tiền lương nhân viên</h2>
+        <div class="content">
+            <div class="content__left">
+                <p>Nhập tiền lương 1 ngày công</p>
+                <input type="text" placeholder="Nhập số tiền" id="salary__oneday">
+                <p>Nhập số ngày công</p>
+                <input type="text" placeholder="Nhập số ngày " id="salary__timework">
+                <p>Tổng tiền lương </p>
+                <input type="text" placeholder="0" id="salary__total" disabled>
+                <button id="salary__bill">Tính Tiền</button>
+            </div>
+            <div class="content__right"></div>
+        </div>
+    </section>
+    <hr>
+    <!-- BT2 -->
+    <section>
+        <h2>Bài 2: Tính giá trị trung bình của 5 số thực</h2>
+        <div class="content">
+            <div class="content__left">
+                <h3>Nhập 5 số thực</h3>
+                <div class="realnumber__item" id="item1">
+                    <p>Số thực 1</p>
+                    <input type="text" placeholder="nhập số thực 1" id="realnumber_one">
+                    <div class="realnumber__arrow" style="display: flex;">
+                        <button id="realnumber__previous1">Quay lại</button>
+                        <button id="realnumber__next1">Tiếp Tục</button>
+                    </div>
+                </div>
+
+                <div class="realnumber__item" id="item2">
+                    <p>Số thực 2</p>
+                    <input type="text" placeholder="nhập số thực 2" id="realnumber_two">
+                    <div class="realnumber__arrow" style="display: flex;">
+                        <button id="realnumber__previous2">Quay lại</button>
+                        <button id="realnumber__next2">Tiếp Tục</button>
+                    </div>
+                </div>
+                <div class="realnumber__item" id="item3">
+                    <p>Số thực 3</p>
+                    <input type="text" placeholder="nhập số thực 3" id="realnumber_three">
+                    <div class="realnumber__arrow" style="display: flex;">
+                        <button id="realnumber__previous3">Quay lại</button>
+                        <button id="realnumber__next3">Tiếp Tục</button>
+                    </div>
+                </div>
+                <div class="realnumber__item" id="item4">
+                    <p>Số thực 4</p>
+                    <input type="text" placeholder="nhập số thực 4" id="realnumber_four">
+                    <div class="realnumber__arrow" style="display: flex;">
+                        <button id="realnumber__previous4">Quay lại</button>
+                        <button id="realnumber__next4">Tiếp Tục</button>
+                    </div>
+                </div>
+                <div class="realnumber__item" id="item5">
+                    <p>Số thực 5</p>
+                    <input type="text" placeholder="nhập số thực 5" id="realnumber_five">
+                    <div class="realnumber__arrow" style="display: flex;">
+                        <button id="realnumber__previous5">Quay lại</button>
+                        <button id="realnumber__next5">Tiếp Tục</button>
+                    </div>
+                </div>
+                <p>Trung bình <span id="realnumber_input">
+                        ( <span id="realnumber_input1"></span>, <span id="realnumber_input2"></span>, <span
+                            id="realnumber_input3"></span>, <span id="realnumber_input4"></span>, <span
+                            id="realnumber_input5"></span> )</span> </p>
+                <p class="output" id="realnumber__average">0</p>
+                <button id="realnumber__btn">Tính Trung Bình</button>
+
+            </div>
+            <div class="content__right"></div>
+        </div>
+    </section>
+    <hr>
+    <!-- BT3 -->
+    <section>
+        <h2>Bài 3: Quy đổi tiền</h2>
+        <div class="content">
+            <div class="content__left">
+                <h3>Quy đổi USD sang VND</h3>
+                <p>Nhập số USD muốn quy đổi</p>
+                <input type="text" name="" id="currency__input" placeholder="Nhập số USD">
+                <button id="currency__btn">Quy Đổi</button>
+                <p class="output" id="currency__output">0</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- BT4 -->
+    <section>
+        <h2>Bài 4: Tính diện tích, chu vi hình chữ nhật</h2>
+        <div class="content">
+            <div class="content__left">
+                <h3>Tính S, P của hình chữ nhật</h3>
+                <p>Nhập chiều dài</p>
+                <input type="text" name="" id="rectangle__length" placeholder="chiều dài">
+                <p>Nhập chiều rộng</p>
+                <input type="text" name="" id="rectangle__width" placeholder="chiều rộng">
+                <div class="rectangle__btn">
+                    <button id="rectangle__perimeter">Tính Chu Vi</button>
+                    <button id="rectangle__acreage">Tính Diện Tích</button>
+                </div>
+                <p class="output">Chu Vi : P=
+                    <span id="rectangle__outputP">
+                    </span>
+                </p>
+                <p class="output">Diện Tích : S=
+                    <span id="rectangle__outputS"></span>
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <!-- BT5 -->
+    <section>
+        <h2>Bài 5: Tính tổng 2 ký số</h2>
+        <div class="content">
+            <div class="content__left">
+                <h3>Tính tổng 2 ký số</h3>
+                <p>Nhập số có 2 chữ số</p>
+                <input type="text" placeholder="Số có 2 chữ số" id="number__input">
+                <button id="number__btn">Tổng 2 Ký Số</button>
+                <p class="output" id="number__output">0</p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

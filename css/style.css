@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+}
+section {
+  padding: 20px;
+}
+.content {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.content .content__left {
+  background-color: rgba(128, 128, 128, 0.11);
+  padding: 30px 30px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  width: 35%;
+}
+.content .content__left:hover {
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.459);
+}
+input {
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  transition: all 0.5s;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+}
+input:hover {
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.459);
+}
+input:focus {
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.459);
+}
+button {
+  width: 45%;
+  height: 40px;
+  font-weight: bold;
+  margin: 10px 0;
+  border: none;
+  transition: all 0.5s;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.26);
+  outline: none;
+}
+button:hover {
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.452);
+}
+
+button:active {
+  box-shadow: none;
+}
+p {
+  font-weight: 500;
+}
+hr {
+  margin: 30px 0;
+}
+h3 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+h2 {
+  margin-bottom: 40px;
+}
+/* BT1 */
+#salary__total {
+  box-shadow: none;
+  background-color: rgba(128, 128, 128, 0.274);
+  color: black;
+}
+/* BT2 */
+.output {
+  height: 35px;
+  line-height: 35px;
+  padding: 0 10px;
+  background-color: rgba(128, 128, 128, 0.356);
+  margin: 10px 0;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+.realnumber__item:not(:first-of-type) {
+  display: none;
+}
+#realnumber__btn {
+  display: none;
+}
+.realnumber__arrow {
+  display: flex;
+  justify-content: space-between;
+}
+#realnumber_input {
+  display: none;
+}
+/* BT3 */
+.rectangle__btn {
+  display: flex;
+  justify-content: space-between;
+}
